@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Module 6 Assignment - Neal Patel</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+    <script src="js/Assignment6.js"></script>
+</head>
+
+<body>
+<section id="title">
+    <h1>Module 5 Assignment</h1>
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please Select an Option</option>
+        <option>Add A Customer</option>
+        <option>Change Customer Shipping</option>
+        <option>Delete A Customer</option>
+    </select>
+</section>
+
+<section id="addcustom" class="addcustom">
+        <h2>Add A Customer</h2>
+        <br>
+        <h3>New Customer's Information</h3>
+        <br>
+        <label>Enter Customer ID:</label>
+        <input type="text" id="customid">
+        <br>
+        <label>Enter the Customer's Name:</label>
+        <input type="text" id="customname">
+        <br>
+        <label>Enter the Customer's City:</label>
+        <input type="text" id="customcity">
+        <br>
+        <br>
+        <button onclick="AddCustomer()">Add Customer</button>
+        <br>
+        <br>
+        <label id="result"></label>
+</section>
+
+<section id="shipchange" class="shipchange">
+        <h2>Change Customer Shipping Information</h2>
+        <br>
+        <h3>Customer's New Shipping Information</h3>
+        <br>
+        <label>Order ID</label>
+        <input type="number" id="ordid">
+        <br>
+        <label>Ship-To Name</label>
+        <input type="text" id="sname">
+        <br>
+        <label>Ship-To Address</label>
+        <input type="text" id="sadd">
+        <br>
+        <label>Ship-To City</label>
+        <input type="text" id="scity">
+        <br>
+        <label>Ship-To Postal Code</label>
+        <input type="text" id="spcode">
+        <br>
+        <button onclick="UpdateAddress()" id="update">Update Shipping Information</button>
+        <br>
+        <label id="shipmentchange"></label>
+</section>
+
+<section id="deletecustom" class="deletecustom">
+        <h2>Delete a Customer</h2>
+        <br>
+        <h3>Customer's Information</h3>
+        <br>
+        <label>Customer ID to be Deleted:</label>
+        <input type="text" id="custdelid">
+        <br>
+        <button onclick="DeleteCustomer()">Delete Customer</button>
+        <br>
+        <label id="dresult"></label>
+</section>
+    
+</body>
+</html>
